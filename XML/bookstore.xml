@@ -1,33 +1,13 @@
 <!Doctype bookstore System "bookstore.dtd">
 
 <bookstore>
-    <book sibn="book">
-        <title></title>
-        <name></name>
-        <aurthor></aurthor>
-    </book>
-
-    <book sibn="book">
-        <title>book titile here</title>
-        <name>book name </name>
-        <aurthor>aurthor name here</aurthor>
-    </book>
-
-    <book sibn="book">
-        <title></title>
-        <name></name>
-        <aurthor></aurthor>
-    </book>
-
-    <book sibn="book">
-        <title></title>
-        <name></name>
-        <aurthor></aurthor>
-    </book>
-    
-    <book sibn="book">
-        <title></title>
-        <name></name>
-        <aurthor></aurthor>
-    </book>
+    <topic >
+        <name></name> 
+        
+        <book isbn="" catrgory =" " price="">
+            <title></title>
+            <aurthor></aurthor>
+        </book>
+        
+    <topic>
 </bookstore>

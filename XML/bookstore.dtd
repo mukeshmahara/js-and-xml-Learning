@@ -1,11 +1,23 @@
 <?xml version="1.0"?>
 <!DOCTYPE bookstore [
 <!ELEMENT bookstore(book+)>
-<!ELEMENT book (titile,name,aurthor)>
+<!ELEMENT topic (name, book*)>
+
+
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT book (titile,aurthor)>
+
 <!ELEMENT titile (#CDATA)>
-<!ELEMENT name (#CDATA)>
+
 <!ELEMENT aurthor (#CDATA)>
 
-<!Attlist book isbn #PCDATA "0">
+
+<!Attlist book isbn #FIXED "121">
+
+<!Attlist book category #PCDATA "REQUIRED">
+
+<!Attlist book price #PCDATA "REQUIRED">
 
 ]>

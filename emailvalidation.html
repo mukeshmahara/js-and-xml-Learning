@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            Javascript from validation -checking email
+        </title>
+    </head>
+    <body onload ='document.form1.email.focus()'>
+        <center>
+            <div class="mail">
+                <h2>Imput an email and submit</h2>
+                <form action="#" name="form1">
+                    <ul type="circle">
+                        <li>
+                            <input type="text " name="email">
+                        </li>
+                        <li>
+                            &nbsp;
+                        </li>
+                        <li class="submit">
+                            <input type="Submit" value="Submit" onclick="ValidateEmail(document.form1.email)">
+                        </li>
+                        <li>&nbsp;</li>
+                    </ul>   
+
+                </form>
+
+            </div>
+        </center>
+        <script src="/javascript/email-validate.js"></script>
+        
+    </body>
+</html>

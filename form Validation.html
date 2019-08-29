@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form validation</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 01%;
+            padding: 0%;
+        }
+        h2{
+            text-align: center;
+        }
+        
+    </style>
+  
+        
+        <form action="" name="contest" onsubmit="return validateForm" method="GET">
+            <h2 > Contest Application</h2>
+            <p>
+                Last Name :<input type="text" name="last" size="16">&nbsp;
+                First Name :&nbsp;<input type="text" name="fist" size="16">
+                Middle Initial : <input type="text" name="initial" size="16">
+            </p>
+            <p>Email Address: <input type="text" name="email" size="32"></p>
+            <p>   In 50 words or less, state why you should clean Kathmandu:</p>
+            <textarea name="eassy" id="" cols="40" rows="5"></textarea>
+            <p>
+                Submit your wining entry: <br><input type="submit" name="go" value="Submit my opinion">
+            </p>
+        </form>
+        
+  
+</body>
+<Script>
+    function isBlank(s){
+        var len = s.length
+        var i
+        for(i = 0; i<len; i++){
+            if(s.charAt(i)!= " ")
+            return false
+        }
+        return true
+    }
+
+    function validate(fieldName, fieldValue){
+        if(isBlank(fieldValue)){
+            alert(fieldName + "cannot be left blank.")
+            return false
+        }
+    }
+    function validateForm(){
+        if(!validate("The last name field",document.contest.last.value))
+            return false
+        if(!validate("The last name field",document.contest.email.value))
+            return false
+        if(!validate("The last name field",document.contest.essay.value))
+            return false
+    }
+</Script>
+</html>

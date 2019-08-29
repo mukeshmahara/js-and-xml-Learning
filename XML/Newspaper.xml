@@ -1,0 +1,49 @@
+<Newspaper>
+    <Article Aurthor = "Mukesh Mahara">
+        <Headline></Headline>
+        <Byline></Byline>
+        <Lead></lead>
+        <Body></Body>
+        <Note></Note>
+    </Article>
+
+    <Article>
+        <Headline></Headline>
+        <Byline></Byline>
+        <Lead></lead>
+        <Body></Body>
+        <Note></Note>
+    </Article>
+    
+    <Article>
+        <Headline></Headline>
+        <Byline></Byline>
+        <Lead></lead>
+        <Body></Body>
+        <Note></Note>
+    </Article>
+
+    <Article>
+        <Headline></Headline>
+        <Byline></Byline>
+        <Lead></lead>
+        <Body></Body>
+        <Note></Note>
+    </Article>
+
+    <Article>
+        <Headline></Headline>
+        <Byline></Byline>
+        <Lead></lead>
+        <Body></Body>
+        <Note></Note>
+    </Article>
+    
+    <Article>
+        <Headline></Headline>
+        <Byline></Byline>
+        <Lead></lead>
+        <Body></Body>
+        <Note></Note>
+    </Article>
+</Newspaper>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE bookstore [
+<!ELEMENT bookstore(book+)>
+<!ELEMENT book (titile,name,aurthor)>
+<!ELEMENT titile (#CDATA)>
+<!ELEMENT name (#CDATA)>
+<!ELEMENT aurthor (#CDATA)>
+
+<!Attlist book isbn #PCDATA "0">
+
+]>

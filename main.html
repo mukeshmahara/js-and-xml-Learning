@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+
+    <script lang="javascript">
+        function showInformation(){
+            window.open("Kathmandu.html", "Information")
+        }
+        
+        
+        function initialize(){
+            imageSource = new Array(5)
+            for (var i= 1; i<=5; i++){
+                imageSource[i] = new Image()
+                imageSource[i].src = "Picture" +i+".jpg" 
+            }
+            nextImage = 1
+            interval = setInterval('animate()' , 3000)
+        }
+
+        function animate(){
+
+            var i= nextImage
+            ++nextImage 
+            nextImage %=5
+            if(imageSource[i].complete){
+                document.display.src = imageSource[i].src
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <h1>Window Objects</h1>
+    <a href="#" onclick="showInformation()"> open</a>
+
+    <a href="#" onclick="initialize()">ok</a>
+    <img src="Picture 0 .jpg" alt="" name="display" height="700px">
+    
+
+    <script>
+        initialize()
+    </script>
+    <h1>Simple Animation</h1>
+        
+
+
+</body>
+</html>

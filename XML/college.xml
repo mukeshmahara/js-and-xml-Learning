@@ -1,0 +1,31 @@
+<root>
+<!-- <?xml version = 1.0 utf =8.5?> -->
+
+    <college>
+        <CollegeName>Madan Bhandari Memorial College</CollegeName>
+        <Address>BinayakNagar, KAthamandu</Address>
+        <Email>mbmc@gmail.com</Email>
+        <Department>BSC. CSIT</Department>
+    </college>
+    
+     <!-- <college>
+        <CollegeName>Trinity College</CollegeName>
+        <Address>KAthamandu</Address>
+        <Email>Trinity@gmail.com</Email>
+        <Department>BSC. CSIT</Department>
+    </college>
+
+    <college>
+        <CollegeName>Ascol College</CollegeName>
+        <Address>KAthamandu, Nepal</Address>
+        <Email>Ascol@gmail.com</Email>
+        <Department>BSC. CSIT</Department>
+    </college>
+     
+    <college>
+        <CollegeName>text College</CollegeName>
+        <Address>KTM, Nepal</Address>
+        <Email>texas@gmail.com</Email>
+        <Department>BSC. CSIT</Department>
+    </college> -->
+</root>

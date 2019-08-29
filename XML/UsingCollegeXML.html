@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Using College HTML</title>
+</head>
+<body>
+    <h1>Using College XML</h1>
+        <table border="1" id="info">
+            <tr>
+                <th>CollegeName</th>
+                <th>Address</th>
+                <th>Department</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td id="college"></td> 
+                <td id="address"></td> 
+                <td id="department"></td> 
+                <td id="email"></td> 
+            </tr>
+        </table>
+            
+        
+            
+            <script>
+            var xmlhttp, xmlDoc;
+            xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "college.xml", false);
+            xmlhttp.send();
+            function myFunction(xml) {
+            
+                var xmlDoc = xml.responseXML;
+                var table="<tr><th>Name</th><th>Address</th><th>Email</th><th>Department</th></tr>";
+                var x = xmlDoc.getElementsByTagName("college");
+                // for (let i = 0; i < x.lenght; i++) {
+                    table += "<tr><td>" +
+                    xmldoc.getElementsByTagName("CollegeName")[0].childNodes[0].nodeValue;+"</td><td>" +
+                    
+
+                    xmldoc.getElementsByTagName("Address")[0].childNodes[0].nodeValue;+"</td><td>" +
+                    
+                    xmldoc.getElementsByTagName("Email")[0].childNodes[0].nodeValue;+"</td><td>" +
+                    
+                    xmldoc.getElementsByTagName("Department")[0].childNodes[0].nodeValue; +"</td></tr>"         
+                }
+                document.getElementById("info").innerHTML = table;
+           
+            // }
+            </script>
+            
+    
+</body>
+</html>

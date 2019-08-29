@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE bookstore [
-<!ELEMENT bookstore(book+)>
+<!ELEMENT bookstore(topic+)>
 <!ELEMENT topic (name, book*)>
 
 
@@ -18,6 +18,6 @@
 
 <!Attlist book category #PCDATA "REQUIRED">
 
-<!Attlist book price #PCDATA "REQUIRED">
+<!Attlist book price #PCDATA "IMPLIED">
 
 ]>
